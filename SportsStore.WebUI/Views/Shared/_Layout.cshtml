@@ -18,6 +18,7 @@
      background-color: tan;
      width: 100%;
      height: auto;
+
 }
 
 #bannerli {
@@ -28,25 +29,32 @@
     margin: 2px 0px;
     float: left;
 }
-    </style>
+.myHeight {
+    height:140px;
+    font-size: 125%;
+    overflow: hidden;
+    
+}
+
+</style>
 </head>
 <body>
     <div class="container" id="banner">
-        <div  id="myimg" class="row">
+        <div  id="myimg" class="row myHeight">
             <IMG SRC="~/Pictures/TroySuit.jpg" ALT="Troy Herrick" WIDTH=100 HEIGHT=120>
             <p style="font-weight:bold"> - Troy Herrick</p>
         </div>
 
-        <div id="bannerli">
-            <ul style="font-weight:bold; font-size:125%; margin-top: 10px; margin-right:30px;">
+        <div class="myHeight mySmallText" id="bannerli">
+            <ul style="font-weight:bold; margin-top: 10px; margin-right:30px;">
                 <li>Oracle Certified Java programmer</li>
                 <li>Working experience with Java and C# MVC Projects</li>
                 <li>Experience in Agile development teams</li>
             </ul>
         </div>
 
-        <div>
-            <ul style="font-weight:bold; font-size:125%;  margin-top: 10px; margin-left: 20px;">
+        <div class="myHeight mySmallText">
+            <ul style="font-weight:bold; margin-top: 10px; margin-left: 20px;">
                 <li>Bachelor Degree in Computer Science</li>
                 <li>17 years in the IT Field</li>
                 <li>Developed this site using <i>Pro ASP.NET MVC5</i>. by Adam Freeman. APress, 2013.</li>
