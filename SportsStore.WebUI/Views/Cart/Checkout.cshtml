@@ -14,8 +14,9 @@
     <h3>Ship to</h3>
     <div class="form-group">
         <label>Name</label>
-        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control", @id="firstName"})
     </div>
+    <div id="nameMsg"></div>
 
     <h3>Address</h3>
 
@@ -43,3 +44,4 @@
     </div>
 }
 
+<script src="~/scripts/workingScript1.js"></script>

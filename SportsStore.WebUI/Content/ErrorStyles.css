@@ -4,8 +4,85 @@
 .validation-summary-errors { font-weight: bold; color: #f00;}
 .validation-summary-valid  { display: none;}
 
-@media only screen and (max-width: 800px) {
+/*@media only screen and (max-width: 800px) {
         .mySmallText {
         font-size: 100% !important;
+        background-color: lightblue;
+        }
+}*/
+
+@media screen and (min-width: 100px) {
+  .mySmallText {
+    font-size: .6em !important; 
+    background-color: tan;
+  }
+            .myHeight {
+            height: 90px;
+            font-size: 125%;
+            overflow: hidden;
+        }
+
+}
+@media screen and (min-width: 650px) {
+  .mySmallText {
+    font-size: .8em !important; 
+    background-color: tan;
+  } 
+            .myHeight {
+            height: 90px;
+            font-size: 125%;
+            overflow: hidden;
         }
 }
+@media screen and (min-width: 740px) {
+  .mySmallText {
+    font-size: .9em !important; 
+    background-color: tan;
+  } 
+           .myHeight {
+            height: 140px;
+            font-size: 125%;
+            overflow: hidden;
+        }
+  }
+
+@media screen and (min-width: 740px) {
+    img.mySmallText {
+
+        width: 50 !important;
+        height: 60 !important;
+    }
+              .myHeight {
+            height: 140px;
+            font-size: 125%;
+            overflow: hidden;
+        }
+}
+
+
+@media screen and (min-width: 895px) {
+  .mySmallText {
+    font-size: 1.1em !important; 
+    background-color: tan;
+    
+  }
+            .myHeight {
+            height: 140px;
+            font-size: 125%;
+            overflow: hidden;
+        }
+}
+@media screen and (min-width: 1065px) {
+  .mySmallText {
+    font-size: 1.3em !important; 
+    background-color: tan;
+  } 
+            .myHeight {
+            height: 140px;
+            font-size: 125%;
+            overflow: hidden;
+        }
+}
+
+
+

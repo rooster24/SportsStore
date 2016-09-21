@@ -14,38 +14,42 @@
             margin-left: 15px;
         }
 
-#banner {
-     background-color: tan;
-     width: 100%;
-     height: auto;
+        .banner {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: tan;
+            width: 100%;
+            height: auto;
+        }
 
-}
+        .bannerli {
+            float: left;
+        }
 
-#bannerli {
-    float: left;
-}
+        .myimg {
+            margin: 2px 0px;
+            float: left;
 
-#myimg {
-    margin: 2px 0px;
-    float: left;
-}
-.myHeight {
-    height:140px;
-    font-size: 125%;
-    overflow: hidden;
-    
-}
+        }
 
-</style>
+
+
+
+        
+    </style>
 </head>
 <body>
-    <div class="container" id="banner">
-        <div  id="myimg" class="row myHeight">
-            <IMG SRC="~/Pictures/TroySuit.jpg" ALT="Troy Herrick" WIDTH=100 HEIGHT=120>
-            <p style="font-weight:bold"> - Troy Herrick</p>
-        </div>
+    <div class="banner">
+        <div class="row myHeight mySmallText myimg">
+                <IMG class="hidden-xs" SRC="~/Pictures/TroySuit.jpg" ALT="Troy Herrick" WIDTH=100 HEIGHT=120>
+                <IMG class="visible-xs" SRC="~/Pictures/TroySuit.jpg" ALT="Troy Herrick" WIDTH=50 HEIGHT=60>
+                <p class="hidden-xs" style="font-weight:bold;font-size: 15px !important;"> - Troy Herrick</p>
+                <p class="visible-xs" style="font-weight:bold;font-size: 8px !important;"> - Troy Herrick</p>
+            </div>
 
-        <div class="myHeight mySmallText" id="bannerli">
+        <div class="myHeight mySmallText bannerli">
             <ul style="font-weight:bold; margin-top: 10px; margin-right:30px;">
                 <li>Oracle Certified Java programmer</li>
                 <li>Working experience with Java and C# MVC Projects</li>
@@ -71,7 +75,7 @@
         @Html.Action("Summary", "Cart")
     </div>
     <div class="visible-xs">
-        @Html.Action("Menu", "Nav", new { horizontalLayout = true})
+        @Html.Action("Menu", "Nav", new { horizontalLayout = true })
     </div>
     <div class="row panel">
         <div class="col-sm-3 hidden-xs">
@@ -81,5 +85,6 @@
             @RenderBody()
         </div>
     </div>
+
 </body>
 </html>
